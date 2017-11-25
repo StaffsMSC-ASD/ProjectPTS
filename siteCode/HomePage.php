@@ -9,7 +9,7 @@ session_destroy();
                <meta charset="UTF-8">
                <title>TheGreenSystem.com </title>
                <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
-               <link rel="stylesheet" type="text/css" href= "agile2.css">
+               <link rel="stylesheet" type="text/css" href= "HomePage.css">
                 <meta name="viewport" content="width=device-width, inital-1.8">
                 
     </head>
@@ -23,7 +23,8 @@ session_destroy();
                   <div class="wrapper">
                      <nav> 
                        <ul>
-                           <li class="current"><a href="agile.php">HOME</a></li>
+                           <li class="current"><a href="HomePage.php">HOME</a></li>
+                             <li><a href="Login88.html">Login</a></li>
                             
                         
                          </ul>
