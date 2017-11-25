@@ -42,6 +42,8 @@ session_destroy();
                           <div class="box">
                                <p>Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da</p>
                          </div>
+                        </div>  
+                    </div> 
                            </section>
                  
           <footer class="mainFooter">
