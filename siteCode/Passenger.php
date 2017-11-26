@@ -21,14 +21,13 @@ session_destroy();
                 </div>
                  
                   <div class="wrapper">
-                     <nav> 
+                      <nav> 
                        <ul>
-                           <li class="current"><a href="HomePage.php">HOME</a></li>
-                           <li class="current"><a href="Passenger.php">PASSENGER</a></li>
-                             <li><a href="Login88.html">AdminLogin</a></li>
-                            
-                        
-                         </ul>
+                           <li class="current"><a href="index.php">Home</a></li>
+                           <li class="current"><a href="Passenger.php">Passengers</a></li>
+                           <li><a href="Login88.html">Flights</a></li>
+                             <li><a href="Login88.html">AdminLogin</a></li>                        
+                        </ul>
                        </nav>
                    </div>
                </div>
