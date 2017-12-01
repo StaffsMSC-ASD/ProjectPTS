@@ -21,12 +21,12 @@ session_destroy();
                 </div>
                  
                   <div class="wrapper">
-                      <nav> 
+                     <nav> 
                        <ul>
                            <li class="current"><a href="index.php">Home</a></li>
-                           <li class="current"><a href="Passenger.php">Passengers</a></li>
-                           <li><a href="Login88.html">Flights</a></li>
-                             <li><a href="Login88.html">AdminLogin</a></li>                        
+                           <li class="current"><a href="Passenger.php">Passenger Search</a></li>
+                           <li class="current"><a href="Flights.php">Flight Search</a></li>
+                           <li class="current"><a href="AdminHome.php">Admin Home</a></li>                       
                         </ul>
                        </nav>
                    </div>
@@ -36,37 +36,51 @@ session_destroy();
               
               <div class="wrapper">
             
-       <h1> Please enter your details:</h1>
+       <h1> Search Passengers</h1>
                     
-                
+       <p>Use this form to search through passengers by various criteria -- more blurb to be added </p>        
                         
            <form action = "HomePage.php" method = "POST">
-        
-                           <input type = "text" name= "Firstname" placeholder= "FIRSTNAME">
-                           <br> 
-                           <input type = "text" name= "Surname" placeholder= "SURNAME"> 
-                           <br> 
-                           <input type = "text" name= "Age" placeholder= "AGE">        
-                           <br> 
-                            <input type = "text" name= "Address" placeholder= "ADDRESS">        
-                           <br> 
-                            <input type = "text" name= "RISK_TYPE_ID" placeholder= "RISK_TYPE_ID">      
-                           <br> 
-                           <input type = "email" name= "Email" placeholder= "Email"> <br> 
-                           <input type = "password" name= "Password" placeholder= "PASSWORD"><br> 
-                           <button type = "submit">SIGN UP </button>
-                           <br>
-                           <br>
-                           <h2 class="message">Already registered? <a href="#">Sign In</a></h2>
-         </form>
-                  
+               <!-- Will replace table with CSS and divs -->
+               <table>
+                   <tr>
+                       <td>First Name: </td>
+                       <td><input type = "text" name= "Firstname"></td>
+                   </tr>
+                    <tr>
+                       <td>Surname/Family Name:</td>
+                       <td><input type = "text" name= "Surname"></td>
+                   </tr>
+                    <tr>
+                       <td> Age:</td>
+                       <td> <input type = "text" name= "Age" ></td>
+                   </tr>
+                    <tr>
+                       <td>Address:</td>
+                       <td><input type = "text" name= "Address" ></td>
+                   </tr>
+                   <tr>
+                       <td>Risk Type ID:</td>
+                       <td> <input type = "text" name= "RISK_TYPE_ID" ></td>
+                   </tr>
+                   <tr>
+                       <td>Email:</td>
+                       <td><input type = "email" name= "Email" </td>
+                   </tr>
+               </table>
+               <p><input type="submit" name="searchPassenger" value="Search Passenger" />
+               </p> 
+            </form>
+         
+       <!-- Not needed 
+       <h2 class="message">Already registered? <a href="#">Sign In</a></h2>   
          <form class="login-form">
              
                           <input type="text" placeholder="username"/>
                           <input type="password" placeholder="password"/>
                           <button>login</button>
               
-         </form>    
+         </form>  -->  
        
         </div>
       

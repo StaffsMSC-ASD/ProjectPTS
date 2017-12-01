@@ -22,12 +22,14 @@ session_destroy();
                  
                   <div class="wrapper">
                      <nav> 
+                       <nav> 
                        <ul>
                            <li class="current"><a href="index.php">Home</a></li>
                            <li class="current"><a href="Passenger.php">Passenger Search</a></li>
                            <li class="current"><a href="Flights.php">Flight Search</a></li>
                            <li class="current"><a href="AdminHome.php">Admin Home</a></li>                       
                         </ul>
+                       </nav>
                        </nav>
                    </div>
                </div>
@@ -36,10 +38,10 @@ session_destroy();
         
               <section id="boxes">
                   <div class="wrapper">
-                        <h3>The Green System</h3>
+                        <h3>Admin Home</h3>
                        <div class="container">
                           <div class="box">
-                               <p>Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da</p>
+                               <p>This is the Admin area this area will contain a set of links for data input. CSS will be changed later/p>
                          </div>
                         </div>  
                     </div> 
