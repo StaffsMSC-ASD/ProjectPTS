@@ -48,54 +48,39 @@ if(isset($_POST['submit'])
             
        <h1> Passenger Details Found</h1>
                     
-       <p>Use this form to search through flights by various criteria -- more blurb to be added </p>        
+       <p>Passenger Details found for passenger Jo Bloggs</p>        
                         
            
                <table>
-                    <tr>
-                        <th width="20%">First Name</th>
-                        <th width="20%">Surname</th>
-                        <th  width="20%">DOB</th>
-                        <th width="20%">Address </th>
-                        <th width="20%">Flight No</th>
-                        <th width="20%">Action</th>
-                   <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
-                   <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
-                   <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
-                   <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
                     
+                   <tr>
+                       <td>Seating</td>
+                       <td>D6</td>
+                   </tr>
+                  <tr>
+                       <td>Destination</td>
+                       <td>Rome</td>
+                   </tr>
+                   <tr>
+                       <td>Flight</td>
+                       <td>ECAD</td>
+                   </tr>
+                   <tr>
+                       <td>Ticket Ref</td>
+                       <td>xyz</td>
+                   </tr>
+                                      <tr>
+                       <td>Payment Details</td>
+                       <td>Visa</td>
+                   </tr>
                </table>
                
-       
-        </div>
+       <form action = "someAction" method = "POST">
+       <p><input type="submit" name="getRisk" value="View Risk Analysis Details" />
+               </p> 
+       </form>
+
+              </div>
       
                  
             <footer class="mainFooter">

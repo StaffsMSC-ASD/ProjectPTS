@@ -56,10 +56,15 @@ supporting defence, anti-smuggling, and regulatory enforcement missions.
 </p>
 <h3>List of pages for development purposes and testing</h3>
             <ul>
-                <li ><a href="Passenger.php">List passengers</a></li>
-                <li ><a href="PassengerDetails.php"> passenger Details</a></li>
-                <li ><a href="flights.php"> Flight Details</a></li>
+                <li><a href="searchPassenger.php">Search Passengers</a></li>
+                <li><a href="searchFlights.php">Search Flights</a></li>
+                <li><a href="PassengerDetails.php">Passenger Details</a></li>
+                <li><a href="FlightDetails.php">Flight Details</a></li>
+                <li ><a href="ListOfFlights.php">List Flights</a></li>
+                <li ><a href="ListOfPassengers.php">List of Passengers</a></li>
+                <li ><a href="RiskDetails.html"> Risk Analysis</a></li>
                 <li ><a href="AdminHome.php"> Admin Area</a></li>
+
             </ul>
             </p
                     </div>
