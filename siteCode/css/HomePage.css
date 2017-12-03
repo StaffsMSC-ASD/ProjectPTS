@@ -1,0 +1,221 @@
+html, body, div, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { 
+    display: block; 
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.container {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+    
+}
+.container2 {
+    width: 700px;
+    margin: 100px auto 0;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+  
+
+header {
+    background: #ABD1F0;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e67300 4px solid;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+
+header li {
+	float: left;
+	display: inline;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+}
+
+header #branding {
+    
+     float: left;
+    
+}
+header #branding h1 {
+     color: #ffffff;
+     margin: 0;
+     text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#nav {
+    
+    float: right;
+    margin-top: 5px;
+}
+#aLogin {
+    clear:both;
+    float:right;
+    martine-top: 5px;
+}
+
+ul.sub1 {
+    position: absolute;
+    background-color:red; 
+    list-style-type: none;
+    width: 125px;
+}
+
+header .highlight, header .current a{
+    color: #e67300;
+    font-weight: bold;
+}
+header a:hover {
+    color: green;
+    transition: all 0.45s;
+    font-weight: bold;
+}
+
+.current a:hover {
+    color:  #ff1a75;
+    transition: all 0.45s;
+    font-weight: bold;
+}
+
+
+.wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  
+}
+.btn.btn-flight {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width:170px;
+	height:40px;
+	background-color: #70ad47;
+    color: #ffffff;
+    border-color: #970917;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+	.btn.btn-flight:hover, .btn.btn-flight:focus, .btn.btn-flight:active, .btn.btn-flight.active{
+    background-color: #777777;
+    color: #FFFFFF;
+	}
+.btn.btn-pass {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width:170px;
+	height:40px;
+	background-color: #4472c4;
+    color: #ffffff;
+    border-color: #970917;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+	.btn.btn-pass:hover, .btn.btn-pass:focus, .btn.btn-pass:active, .btn.btn-pass.active{
+    background-color: #777777;
+    color: #FFFFFF;
+	}
+.btn.btn-fill {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width:170px;
+	height:40px;
+	background-color: #e67300;
+    color: #ffffff;
+    border-color: #970917;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+	.btn.btn-fill1:hover, .btn.btn-fill1:focus, .btn.btn-fill1:active, .btn.btn-fill1.active{
+    background-color: #777777;
+    color: #FFFFFF;
+	}
+	.btn.btn-fill1 {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width:170px;
+	height:40px;
+	background-color: #ff0000;
+    color: #ffffff;
+    border-color: #970917;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+	.btn.btn-fill1:hover, .btn.btn-fill1:focus, .btn.btn-fill1:active, .btn.btn-fill1.active{
+    background-color: #777777;
+    color: #FFFFFF;
+	}
+.btn.btn-fill2 {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width:170px;
+	height:40px;
+	background-color: #ffc000;
+    color: #ffffff;
+    border-color: #970917;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+	.btn.btn-fill2:hover, .btn.btn-fill2:focus, .btn.btn-fill2:active, .btn.btn-fill2.active{
+    background-color: #777777;
+    color: #FFFFFF;
+	}
+	.btn.btn-fill3 {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width:170px;
+	height:40px;
+	background-color: #00b050;
+    color: #ffffff;
+    border-color: #970917;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+	.btn.btn-fill3:hover, .btn.btn-fill3:focus, .btn.btn-fill3:active, .btn.btn-fill3.active{
+    background-color: #777777;
+    color: #FFFFFF;
+	}
+
+/*footer*/
+footer.mainFooter {
+    padding: 25px;
+    margin-top: 25px;
+    color: #ffffff;
+    /*background-color:#e67300; */
+    background-color: #ABD1F0;
+
+    text-align: center;
+    height: 50px;
+    
+}
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav h1 {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    
+}
