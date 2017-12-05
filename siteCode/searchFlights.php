@@ -1,5 +1,19 @@
 <?php
 session_start();
+
+
+include("Connection.php");
+
+flights=array();
+
+if(isset($_POST['searchFlight'])AND $_POST['Crew'] AND $_POST['Destination'] AND $_POST['Origin'] AND $_POST['flight_capacity']))
+{
+  $query="SELECT * FROM FLIGHT_DETAIL WHERE destination=".$_POST['destination']."AND crew=".$_POST['Crew']."AND origin=".$_POST['Origin']."AND flight_capacity=".$_POST['Flight_capacity'];
+  $flights=mysqli_query($link,$query);
+    while ($row = mysqli_fetch_array($flights,MYSQL_NUM)){
+    echo $row[0], $row[1]),$row[2],$row[3],$row[4];
+  
+  }
 session_destroy();
 ?>
 
