@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -54,7 +55,7 @@ session_destroy();
                     
        <p>Use this form to search through passengers by various criteria -- more blurb to be added </p>        
                         
-           <form action = "HomePage.php" method = "POST">
+           <form action = "ListOfPasseners.php" method = "POST">
                <!-- Will replace table with CSS and divs -->
                <table>
                    <tr>
@@ -77,10 +78,7 @@ session_destroy();
                        <td>Risk Type ID:</td>
                        <td> <input type = "text" name= "RISK_TYPE_ID" ></td>
                    </tr>
-                   <tr>
-                       <td>Email:</td>
-                       <td><input type = "email" name= "Email" </td>
-                   </tr>
+                 
                </table>
                <p><input type="submit" name="searchPassenger" value="Search Passenger" />
                </p> 
