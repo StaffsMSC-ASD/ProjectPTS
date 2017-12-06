@@ -1,5 +1,5 @@
 <?php
-session_start();
+/*session_start();
 
 
 include("Connection.php");
@@ -14,7 +14,7 @@ if(isset($_POST['searchFlight'])AND $_POST['Crew'] AND $_POST['Destination'] AND
     echo $row[0], $row[1],$row[2],$row[3],$row[4];
   
   }
-session_destroy();
+session_destroy();*/
 ?>
 
 <!DOCTYPE html>
@@ -54,17 +54,14 @@ session_destroy();
                     
        <p>Use this form to search through flights by various criteria -- more blurb to be added </p>        
                         
-           <form action = "HomePage.php" method = "POST">
+           <form action = "ListOfFlights.php" method = "POST">
                <!-- Will replace table with CSS and divs -->
                <table>
                    <tr>
                        <td>Flight no: </td>
                        <td><input type = "text" name= "flightNo"></td>
                    </tr>
-                    <tr>
-                       <td>Airline: </td>
-                       <td><input type = "text" name= "airLine"></td>
-                   </tr>
+                    
                     <tr>
                        <td>Depart from</td>
                        <td> <input type = "text" name= "dptFrom" ></td>
@@ -73,14 +70,8 @@ session_destroy();
                        <td>Destination:</td>
                        <td><input type = "text" name= "destination" ></td>
                    </tr>
-                   <tr>
-                       <td>Connections</td>
-                       <td> <input type = "text" name= "fltConnection" ></td>
-                   </tr>
-                   <tr>
-                       <td>Ticekt Details:</td>
-                       <td><input type = "email" name= "tckDetails" </td>
-                   </tr>
+                   
+             
                </table>
                <p><input type="submit" name="searchFlight" value="Search Flights" />
                </p> 

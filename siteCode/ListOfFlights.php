@@ -16,6 +16,25 @@ if(isset($_POST['search3']));
   
   }
  */
+ session_start();
+
+include("Connection.php");
+
+$query="SELECT * FROM flight_detail WHERE flight_number='".$_POST['flightno']."' AND origin='".$_POST['dptfrom']."'AND destination='".$_POST['destination']."' ";
+
+if(isset($_POST['searchFlight']) AND isset($_POST['Firstname']) AND isset($_POST['Surname']) AND isset($_POST['Age']) )
+{
+  $result=mysqli_query($link,$query);
+  if(!$result) {
+    
+     die("QUERY FAILED" . mysqli_error($link));    
+    }else {
+  while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
+    echo $row[0],$row[1],$row[2],$row[3],$row[4];
+	}}
+
+}
+ 
 ?>
 <!DOCTYPE html>
 <html>

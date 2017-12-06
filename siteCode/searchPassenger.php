@@ -1,6 +1,6 @@
 
 <?php
-session_start();
+/*session_start();
 
 include("Connection.php");
 
@@ -15,7 +15,7 @@ if(isset($_POST['searchPassenger'] AND $_POST['Firstname'] AND $_POST['Surname']
 }
 
 }
-session_destroy();
+session_destroy();*/
 ?>
 
 <!DOCTYPE html>
