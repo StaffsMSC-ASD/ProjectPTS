@@ -41,7 +41,7 @@ session_destroy();*/
                       <li class="current"><a href="HomePage.php">Home</a></li>
                       <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
                       <li class="current"><a href="searchFlights.php">Flight Search</a></li>
-                      <li class="current"><a href="AdminHome.php">Admin Home</a></li>                       
+                                             
                    </ul>
                        </nav>
                    </div>

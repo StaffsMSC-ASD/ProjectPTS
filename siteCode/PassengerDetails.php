@@ -31,14 +31,14 @@ if(isset($_POST['submit'])
                 </div>
                  
                   <div class="wrapper">
-                      <nav> 
+                     <nav> 
                         <ul>
                       <li class="current"><a href="HomePage.php">Home</a></li>
                       <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
                       <li class="current"><a href="searchFlights.php">Flight Search</a></li>
-                      <li class="current"><a href="AdminHome.php">Admin Home</a></li>                       
+                                             
                    </ul>
-                       </nav>
+                       </nav>>
                    </div>
                </div>
             </header>
