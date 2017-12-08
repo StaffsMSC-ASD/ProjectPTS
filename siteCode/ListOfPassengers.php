@@ -20,7 +20,7 @@ session_start();
 
 include("Connection.php");
 
-$query="SELECT * FROM passenger_detail WHERE firstname='".$_POST['Firstname']."' AND surname='".$_POST['Surname']."'AND age='".$_POST['Age']."'AND adress='".$_POST['Address']."'AND risk_type_id='".$_POST['RISK_TYPE_ID']."' ";
+$query="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND surname='".$_POST['Surname']."'AND age='".$_POST['Age']."'AND adress='".$_POST['Address']."'AND risk_type_id='".$_POST['RISK_TYPE_ID']."' ";
 
 if(isset($_POST['searchPassenger']) AND isset($_POST['Firstname']) AND isset($_POST['Surname']) AND isset($_POST['Age']) AND isset($_POST['Address']) AND isset($_POST['RISK_TYPE_ID']))
 {
@@ -28,10 +28,7 @@ if(isset($_POST['searchPassenger']) AND isset($_POST['Firstname']) AND isset($_P
   if(!$result) {
     
      die("QUERY FAILED" . mysqli_error($link));    
-    }else {
-  while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
-    echo $row[0],$row[1],$row[2],$row[3],$row[4],$row[5];
-	}}
+    }
 
 }
 
@@ -74,45 +71,36 @@ if(isset($_POST['searchPassenger']) AND isset($_POST['Firstname']) AND isset($_P
                         
            
                <table>
-                    <tr>
+               <tr>
                         <th width="20%">First Name</th>
                         <th width="20%">Surname</th>
-                        <th  width="20%">DOB</th>
                         <th width="20%">Address </th>
                         <th width="20%">Flight No</th>
                         <th width="20%">Action</th>
+						</tr>
                    <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
-                   <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
-                   <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
-                   <tr>
-                       <td>Jo</td>
-                       <td>Bloggs</td>
-                       <td>23-03-1979</td>
-                       <td>2 The Mall, LD095QQ</td>
-                       <td>EZY556</td>
-                       <td><a href="PassengerDetails.php"> select </a></td>
-                   </tr>
+				    <?php
+				   	while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
+		$firstname=$row[0];
+		$surname=$row[1];
+		$age=$row[2];
+		$address=$row[4];
+		$risktypeid=$row[5];
+		
+		echo "<tr>";
+		
+		echo "<td> {$firstname} </td>";
+		echo "<td> {$surname} </td>";
+		echo "<td> {$age} </td>";
+		echo "<td> {$address} </td>";
+		echo "<td> {$risktypeid} </td>";
+		
+		echo "<td><a href=PassengerDetails.php>select</a></td>";
+		echo"</tr>";
+		 
+		}
+					?>
+		</tr>
                     
                </table>
                
