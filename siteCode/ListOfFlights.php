@@ -1,37 +1,18 @@
 <?php
-/*
 
-session_start();
-
-include("Connection.php");
-
-flights=array();
-
-if(isset($_POST['search3']));
-{
-  $query="SELECT * FROM FLIGHT_DETAIL WHERE destination=".$_POST[destination]."AND origin=".$_POST[origin].";";
-  $flights=mysqli_query($link,$query);
-    while ($row = mysql_fetch_array($flights,MYSQL_NUM)){
-    echo $row[0], $row[1]),$row[2],$row[3],$row[4];
-  
-  }
- */
  session_start();
 
 include("Connection.php");
 
-$query="SELECT * FROM flight_detail WHERE flight_number='".$_POST['flightno']."' AND origin='".$_POST['dptfrom']."'AND destination='".$_POST['destination']."' ";
+$query="SELECT * FROM FLIGHT_DETAIL WHERE flight_number='".$_POST['flightno']."' AND origin='".$_POST['dptfrom']."'AND destination='".$_POST['destination']."' ";
 
-if(isset($_POST['searchFlight']) AND isset($_POST['Firstname']) AND isset($_POST['Surname']) AND isset($_POST['Age']) )
+if(isset($_POST['searchFlight']) AND (!empty($_POST['flightno'])) AND (!empty($_POST['dptfrom'])) AND (!empty($_POST['destination'])))
 {
   $result=mysqli_query($link,$query);
   if(!$result) {
     
      die("QUERY FAILED" . mysqli_error($link));    
-    }else {
-  while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
-    echo $row[0],$row[1],$row[2],$row[3],$row[4];
-	}}
+    }
 
 }
  
@@ -80,30 +61,27 @@ if(isset($_POST['searchFlight']) AND isset($_POST['Firstname']) AND isset($_POST
                         <th  width="20%">From</th>
                         <th width="20%">Destination</th>
                         <th width="20%">Action</th>
-                   <tr>
-                       <td>BA123</td>
-                       <td>British Airways</td>
-                       <td>London</td>
-                       <td>Toronto</td>
-                       
-                       <td><a href="ListOfFlights.php"> select </a></td>
                    </tr>
-                   <tr>
-                       <td>BA123</td>
-                       <td>British Airways</td>
-                       <td>London</td>
-                       <td>Toronto</td>
-                       
-                       <td><a href="ListOfFlights.php"> select </a></td>
-                   </tr>
-                   <tr>
-                       <td>BA123</td>
-                       <td>British Airways</td>
-                       <td>London</td>
-                       <td>Toronto</td>
-                       
-                       <td><a href="ListOfFlights.php"> select </a></td>
-                   </tr> 
+                    <tr>
+				    <?php
+				   	while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
+		$flightnumber=$row[0];
+		$origin=$row[1];
+		$destination=$row[2];
+		$dptfrom=$row[4];
+		
+		
+		echo "<tr>";
+		
+		echo "<td> {$flightnumber} </td>";
+		echo "<td> {$origin} </td>";
+		echo "<td> {$destination} </td>";
+		echo "<td> {$dptfrom} </td>";
+		echo"</tr>";
+		 
+		}
+					?>
+		</tr>
                </table>
                
        

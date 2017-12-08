@@ -1,22 +1,4 @@
 
-<?php
-/*session_start();
-
-include("Connection.php");
-
-$passengers=array();
-
-if(isset($_POST['searchPassenger'] AND $_POST['Firstname'] AND $_POST['Surname'] AND $_POST['Age'] AND $_POST['Address'] AND $_POST['RISK_TYPE_ID']))
-{
-  $query="SELECT * FROM passenger_detail WHERE firstname=".$_POST['Firstname']."AND surname=".$_POST['Surname']."AND age=".$_POST['Age']."AND address=".$_POST['Address']."AND risk_type_id=".$_POST['RISK_TYPE_ID'];
-  $passengers=mysqli_query($link,$query);
-  while ($row = mysqli_fetch_array($passengers,MYSQLI_NUM)){
-    echo $row[0],$row[1],$row[2],$row[3],$row[4],$row[5];
-}
-
-}
-session_destroy();*/
-?>
 
 <!DOCTYPE html>
 <html>
