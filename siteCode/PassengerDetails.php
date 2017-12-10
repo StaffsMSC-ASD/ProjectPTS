@@ -83,9 +83,10 @@ if(isset($_POST['submit'])
               </div>
       
                  
-            <footer class="mainFooter">
-           <p>TheTheGreenLineSystem, Copyright &copy; 2017<a href="#" title="The GreenLine System" TheTheGreenLineSystem.com</p>
-             </footer>
+        <footer class="mainFooter">
+            <p><a href="#" title="The GreenLine System" TheTheGreenLineSystem.com> GreenLine Systems </a>, Passenger Targeting System :: Copyright &copy; 2017</br>
+            Staffordshire University - MSc - Agile Software Development group project September - December 2017 </p>
+        </footer>
              
         </body>
 </html>

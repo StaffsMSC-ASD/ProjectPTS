@@ -20,23 +20,16 @@ session_destroy();
         </div>
 
              
-                <div id="nav"> 
-                  <nav> 
-                        <ul>
+            <div id="nav"> 
+              <nav> 
+                <ul>
                       <li class="current"><a href="HomePage.php">Home</a></li>
                       <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
                       <li class="current"><a href="searchFlights.php">Flight Search</a></li>
                                              
-                   </ul>
-                       </nav>
-                 <div id="aLogin">
-                    
-                    <form class="login-form">
-                        Admin login:<input type="text" />
-                        Password: <input type="password" />
-                        <input type="submit" value="LOGIN" class="form button"/>
-                    </form>
-                </div>
+                </ul>
+               </nav>
+                
           </div>
        </header>
        
@@ -74,9 +67,10 @@ supporting defence, anti-smuggling, and regulatory enforcement missions.
        </section>
        
 
-     <footer class="mainFooter">
-      <p>TheTheGreenLineSystem, Copyright &copy; 2017<a href="#" title="The GreenLine System" TheTheGreenLineSystem.com</p>
-        </footer>
+    <footer class="mainFooter">
+        <p><a href="#" title="The GreenLine System" TheTheGreenLineSystem.com> GreenLine Systems </a>, Passenger Targeting System :: Copyright &copy; 2017</br>
+        Staffordshire University - MSc - Agile Software Development group project September - December 2017 </p>
+    </footer>
 
    </body>
           
