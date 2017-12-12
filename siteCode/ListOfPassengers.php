@@ -22,7 +22,7 @@ include("Connection.php");
 
 $query="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND surname='".$_POST['Surname']."'AND age='".$_POST['Age']."'AND adress='".$_POST['Address']."'AND risk_type_id='".$_POST['RISK_TYPE_ID']."' ";
 
-if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empty($_POST['Surname']) AND (!empty($_POST['Age'])) AND (!empty($_POST['Address'])) AND isset($_POST['RISK_TYPE_ID']))
+if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empty($_POST['Surname']) AND (!empty($_POST['Age'])) AND (!empty($_POST['Address'])) AND isset($_POST['RISK_TYPE_ID'])))
 {
   $result=mysqli_query($link,$query);
   if(!$result) {
@@ -33,7 +33,8 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
 }else if(isset($_POST['searchPassenger']) AND isset($_POST['RISK_TYPE_ID']) AND (empty($_POST['Firstname'])) AND (empty($_POST['Surname'])) AND (empty($_POST['Age'])) AND (empty($_POST['Address'])))
 {
 	$query2="SELECT * FROM PASSENGER_DETAIL WHERE risk_type_id='".$_POST['RISK_TYPE_ID']."' ";
-	$result=mysqli_query($link,$query2);{
+	$result=mysqli_query($link,$query2);
+	if(!$result){
 	  die("QUERY FAILED" . mysqli_error($link)); 
 	}
 }

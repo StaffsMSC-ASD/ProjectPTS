@@ -36,7 +36,7 @@
                     
        <p>Use this form to search through passengers by various criteria -- more blurb to be added </p>        
                         
-           <form action = "ListOfPasseners.php" method = "POST">
+           <form action = "ListOfPassengers.php" method = "POST">
                <!-- Will replace table with CSS and divs -->
                <table>
                    <tr>
