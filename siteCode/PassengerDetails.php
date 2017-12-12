@@ -30,15 +30,15 @@ if(isset($_POST['submit'])
                      <h1><span class="highlight">The GreenLine</span> Passenger Targeting System </h1>
                 </div>
                  
-                  <div class="wrapper">
+                  <div>
                      <nav> 
                         <ul>
-                      <li class="current"><a href="HomePage.php">Home</a></li>
-                      <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
-                      <li class="current"><a href="searchFlights.php">Flight Search</a></li>
+                      <li><a href="HomePage.php">Home</a></li>
+                      <li><a href="searchPassenger.php">Passenger Search</a></li>
+                      <li><a href="searchFlights.php">Flight Search</a></li>
                                              
                    </ul>
-                       </nav>>
+                       </nav>
                    </div>
                </div>
             </header>
