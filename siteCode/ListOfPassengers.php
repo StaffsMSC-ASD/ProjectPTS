@@ -45,7 +45,6 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
                <meta charset="UTF-8">
                <title>TheGreenSystem.com </title>
                <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
-                <meta name="viewport" content="width=device-width, inital-1.8">
                 
     </head>
          <body>
@@ -58,9 +57,9 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
                   <div class="wrapper">
                      <nav> 
                         <ul>
-                      <li class="current"><a href="HomePage.php">Home</a></li>
-                      <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
-                      <li class="current"><a href="searchFlights.php">Flight Search</a></li>
+                      <li><a href="HomePage.php">Home</a></li>
+                      <li><a href="searchPassenger.php">Passenger Search</a></li>
+                      <li><a href="searchFlights.php">Flight Search</a></li>
                                              
                    </ul>
                        </nav>
