@@ -7,7 +7,6 @@
                <title>TheGreenSystem.com </title>
                <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
                <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
-                <meta name="viewport" content="width=device-width, inital-1.8">
                 
     </head>
          <body>
@@ -20,9 +19,9 @@
                   <div class="wrapper">
                     <nav> 
                         <ul>
-                      <li class="current"><a href="HomePage.php">Home</a></li>
-                      <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
-                      <li class="current"><a href="searchFlights.php">Flight Search</a></li>
+                      <li><a href="HomePage.php">Home</a></li>
+                      <li><a href="searchPassenger.php">Passenger Search</a></li>
+                      <li><a href="searchFlights.php">Flight Search</a></li>
                                              
                    </ul>
                        </nav>
