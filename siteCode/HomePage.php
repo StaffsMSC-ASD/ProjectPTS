@@ -1,8 +1,8 @@
+
 <?php
 session_start();
 session_destroy();
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,28 +10,26 @@ session_destroy();
         <title>Passenger Targeting System</title>
         <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
-        <meta name="viewport" content="width=device-width, inital-1.8">          
-    </head>
+          </head>
     <body>
       <header>
-        <div class="container">
-        <div id="branding">
-        <h1>The GreenLine</span> Passenger Targeting System </h1>
-        </div>
-
-             
-            <div id="nav"> 
-              <nav> 
-                <ul>
-                      <li class="current"><a href="HomePage.php">Home</a></li>
-                      <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
-                      <li class="current"><a href="searchFlights.php">Flight Search</a></li>
+         <div class="container">
+                 <div id="branding">
+                     <h1><span class="highlight">The GreenLine</span> Passenger Targeting System </h1>
+                </div>
+                 
+                  <div>
+                     <nav> 
+                        <ul>
+                      <li><a href="HomePage.php">Home</a></li>
+                      <li><a href="searchPassenger.php">Passenger Search</a></li>
+                      <li><a href="searchFlights.php">Flight Search</a></li>
                                              
-                </ul>
-               </nav>
-                
-          </div>
-       </header>
+                   </ul>
+                       </nav>
+                   </div>
+               </div>
+            </header>
        
 
          <section id="boxes">
@@ -60,8 +58,7 @@ supporting defence, anti-smuggling, and regulatory enforcement missions.
                 <li ><a href="AdminHome.php"> Admin Area</a></li>
 
             </ul>
-            </p
-                    </div>
+            </p></div>
                    </div>  
                </div> 
        </section>
