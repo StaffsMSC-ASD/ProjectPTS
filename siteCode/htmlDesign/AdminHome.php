@@ -23,10 +23,10 @@ session_destroy();
                   <div class="wrapper">
                      <nav> 
                         <ul>
-                      <li class="current"><a href="HomePage.php">Home</a></li>
-                      <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
-                      <li class="current"><a href="searchFlights.php">Flight Search</a></li>
-                      <li class="current"><a href="AdminHome.php">Admin Home</a></li>                       
+                      <li><a href="HomePage.php">Home</a></li>
+                      <li><a href="searchPassenger.php">Passenger Search</a></li>
+                      <li><a href="searchFlights.php">Flight Search</a></li>
+                      <li><a href="AdminHome.php">Admin Home</a></li>                       
                    </ul>
                        </nav>
                    </div>
@@ -46,7 +46,7 @@ session_destroy();
                            </section>
                  
           <footer class="mainFooter">
-           <p>TheTheGreenLineSystem, Copyright &copy; 2017<a href="#" title="The GreenLine System" TheTheGreenLineSystem.com</p>
+           <p>TheTheGreenLineSystem, Copyright &copy; 2017<a href="#" title="The GreenLine System"> TheTheGreenLineSystem.com</a></p>
              </footer>
         
         </body>
