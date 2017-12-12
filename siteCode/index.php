@@ -1,3 +1,4 @@
+
 <?php
 
 /* 
@@ -14,28 +15,12 @@
                <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
                <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
                 <link rel="stylesheet" type="text/css" href="css/style.css">
-
-                <meta name="viewport" content="width=device-width, inital-1.8">
-                
-                <style type="text/css">
-<!--
--->
-              
-                .style2 {
-	font-size: 24px;
-	font-family: "Courier New", Courier, monospace;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-.style4 {font-size: 24px; font-family: "Courier New", Courier, monospace; font-weight: bold; color: #000000; }
--->
-                </style>
 </head>
          <body>
            <header>
              <div class="container">
-                 <div id="branding">
-                     <h1 align="center"><span class="highlight">The GreenLine</span> <br>
+                 <div id="branding" align="center">
+                     <h1 align="center"><span class="highlight">The GreenLine</span> 
                      Passenger Targeting System </h1>
                </div>
                  
@@ -50,7 +35,7 @@
               <section id="boxes">
                 <div class="wrapper">
                       
-    <div align="center"><span class="style4">Admin Login </span></div><br>
+    <div align="center"><h1>Admin Login</h1></div><br>
    
   <div class="form" align="center">
    
