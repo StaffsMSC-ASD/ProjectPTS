@@ -19,9 +19,7 @@ if(isset($_POST['submit'])
      <head>
                <meta charset="UTF-8">
                <title>TheGreenSystem.com </title>
-               <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
-                <meta name="viewport" content="width=device-width, inital-1.8">
-                
+               <link rel="stylesheet" type="text/css" href= "css/HomePage.css">   
     </head>
          <body>
            <header>
@@ -33,9 +31,9 @@ if(isset($_POST['submit'])
                   <div class="wrapper">
                       <nav> 
                         <ul>
-                      <li class="current"><a href="HomePage.php">Home</a></li>
-                      <li class="current"><a href="searchPassenger.php">Passenger Search</a></li>
-                      <li class="current"><a href="searchFlights.php">Flight Search</a></li>
+                      <li><a href="HomePage.php">Home</a></li>
+                      <li><a href="searchPassenger.php">Passenger Search</a></li>
+                      <li><a href="searchFlights.php">Flight Search</a></li>
                                              
                    </ul>
                        </nav>
