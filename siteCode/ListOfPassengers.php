@@ -78,30 +78,29 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
            
                <table>
                <tr>
-                        <th width="20%">First Name</th>
-                        <th width="20%">Surname</th>
-                        <th width="20%">Address </th>
-                        <th width="20%">Flight No</th>
-                        <th width="20%">Action</th>
+                        <th width="20%">User ID</th>
+                        <th width="20%">Firstname</th>
+                        <th width="20%">Surname </th>
+                        <th width="20%">Age</th>
+                        <th width="20%">Address</th>
 						</tr>
                    <tr>
 				    <?php
 				   	while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
-		$firstname=$row[0];
-		$surname=$row[1];
-		$age=$row[2];
+		$userid=$row[0];
+		$firstname=$row[1];
+		$surname=$row[2];
+		$age=$row[3];
 		$address=$row[4];
-		$risktypeid=$row[5];
 		
 		echo "<tr>";
 		
-		echo "<td> {$firstname} </td>";
-		echo "<td> {$surname} </td>";
+		echo "<td> {$userid} </td>";
+		echo "<td> {$firstname}</td>";
+		echo "<td> {$surname}</td>";
 		echo "<td> {$age} </td>";
-		echo "<td> {$address} </td>";
-		echo "<td> {$risktypeid} </td>";
-		
-		echo "<td><a href=PassengerDetails.php>select</a></td>";
+		echo "<td> {$addres} </td>";
+		echo '<td><a href="PassengerDetails.php?id=',$userid,'">select</a></td>';
 		echo"</tr>";
 		 
 		}
