@@ -41,16 +41,16 @@
                <table>
                    <tr>
                        <td>Flight no: </td>
-                       <td><input type = "text" name= "flightNo"></td>
+                       <td><input type = "text" name= "FlightNo"></td>
                    </tr>
                     
                     <tr>
                        <td>Depart from</td>
-                       <td> <input type = "text" name= "dptFrom" ></td>
+                       <td> <input type = "text" name= "DptFrom" ></td>
                    </tr>
                     <tr>
                        <td>Destination:</td>
-                       <td><input type = "text" name= "destination" ></td>
+                       <td><input type = "text" name= "Destination" ></td>
                    </tr>
                    
              
