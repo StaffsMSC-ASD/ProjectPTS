@@ -1,18 +1,46 @@
 <?php
-/*
+
 session_start();
 
 include("connection.php");
+$query = "SELECT flight_number FROM PASSENGER_AET_FLIGHT WHERE passenger_id='".$_GET['id']"'.";
+$query2="SELECT firstname,surname FROM PASSENGER_DETAIL WHERE passenger_id='".$_GET['id']"'.";
+$query3="SELECT destination,origin FROM FLIGHT_DETAIL WHERE flight_number='".$result2."' ";
 
-$query = "SELECT * FROM passengers WHERE pasenger_id=".$_SESSION['pasenger_id'];
-
-if(isset($_POST['submit'])
- 
- {
-   $result=mysqli_query(&link,$query);
+if(!empty($_GET['id'])
+{
+	$userid=$_GET['id'];
+	$result=mysqli_query($link,$query);
+	if(!$result) {
+    
+     die("QUERY FAILED" . mysqli_error($link));    
+    }
+	$result2=mysqli_query($link,$query);
+	if(!$result2) {
+    
+     die("QUERY FAILED" . mysqli_error($link));    
+    }
+	while ($row = mysqli_fetch_array($result2,MYSQLI_NUM)){
+		$firstname=$row[0];
+		$surname=$row[1];
+	}
+	
+	$result3=mysqli_query($link,$query);
+	if(!$result3) {
+    
+     die("QUERY FAILED" . mysqli_error($link));    
+    }
+	while ($row = mysqli_fetch_array($result3,MYSQLI_NUM)){
+		$destination=$row[0];
+		$origin=$row[1];
+	}
+	
+	
    
  }
-*/
+
+
+
 ?>
  <!DOCTYPE html>
 <html>
@@ -48,31 +76,25 @@ if(isset($_POST['submit'])
             
        <h1> Passenger Details Found</h1>
                     
-       <p>Passenger Details found for passenger Jo Bloggs</p>        
+       <p>Passenger Details found for passenger <?phpecho $firstname . " " . $surname;?></p>        
                         
            
                <table>
                     
                    <tr>
-                       <td>Seating</td>
-                       <td>D6</td>
+                       <td>Flight Number</td>
+                       <td><?php echo $result2 ?></td>
                    </tr>
                   <tr>
                        <td>Destination</td>
-                       <td>Rome</td>
+                       <td><?php echo $destination ?></td>
                    </tr>
                    <tr>
-                       <td>Flight</td>
-                       <td>ECAD</td>
+                       <td>Origin</td>
+                       <td><?php $origin?></td>
                    </tr>
-                   <tr>
-                       <td>Ticket Ref</td>
-                       <td>xyz</td>
-                   </tr>
-                                      <tr>
-                       <td>Payment Details</td>
-                       <td>Visa</td>
-                   </tr>
+                   =
+                         
                </table>
                
        <form action = "someAction" method = "POST">
