@@ -1,7 +1,7 @@
 
 <?php
-session_start();
-session_destroy();
+/*session_start();
+session_destroy();*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,20 +17,20 @@ session_destroy();
                  <div id="branding">
                      <h1><span class="highlight">The GreenLine</span> Passenger Targeting System </h1>
                 </div>
-                 
+
                   <div>
-                     <nav> 
+                     <nav>
                         <ul>
                       <li><a href="HomePage.php">Home</a></li>
                       <li><a href="searchPassenger.php">Passenger Search</a></li>
                       <li><a href="searchFlights.php">Flight Search</a></li>
-                                             
+
                    </ul>
                        </nav>
                    </div>
                </div>
             </header>
-       
+
 
          <section id="boxes">
              <div class="wrapper">
@@ -52,17 +52,17 @@ supporting defence, anti-smuggling, and regulatory enforcement missions.
                 <li><a href="searchFlights.php">Search Flights</a></li>
                 <li><a href="PassengerDetails.php">Passenger Details</a></li>
                 <li><a href="FlightDetails.php">Flight Details</a></li>
-                <li ><a href="ListOfFlights.php">List Flights</a></li>
-                <li ><a href="ListOfPassengers.php">List of Passengers</a></li>
+                <li ><a href="ListOfAllFlights.php">List Flights</a></li>
+                <li ><a href="ListOfAllPassengers.php">List of Passengers</a></li>
                 <li ><a href="RiskDetails.html"> Risk Analysis</a></li>
                 <li ><a href="AdminHome.php"> Admin Area</a></li>
 
             </ul>
             </p></div>
-                   </div>  
-               </div> 
+                   </div>
+               </div>
        </section>
-       
+
 
     <footer class="mainFooter">
         <p><a href="#" title="The GreenLine System" TheTheGreenLineSystem.com> GreenLine Systems </a>, Passenger Targeting System :: Copyright &copy; 2017</br>
@@ -70,6 +70,6 @@ supporting defence, anti-smuggling, and regulatory enforcement missions.
     </footer>
 
    </body>
-          
+
 
 </html>

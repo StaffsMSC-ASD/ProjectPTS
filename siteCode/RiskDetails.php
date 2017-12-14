@@ -15,14 +15,18 @@ if(!empty($_POST['getRisk']))
  			$riskid2=$row[0];
 
  		}
-    $query2="SELECT risk_score FROM RISK_DETAIL WHERE risk_type_id='".$riskid2."' ";
+    $query2="SELECT risk_score, risk_name FROM RISK_DETAIL WHERE risk_type_id='".$riskid2."' ";
 
 	   $result2=mysqli_query($link,$query2);
 	   if(!$result2){
 		 die("QUERY 2 FAILED" . mysqli_error($link));
    }while ($row = mysqli_fetch_array($result2,MYSQLI_NUM)){
     $riskscore=$row[0];
+    $riskname=$row[1];
 	}
+  if(empty($riskname)){
+    $riskname="No Risk is associated with this passenger";
+  }
 }
 
 ?>
@@ -63,14 +67,16 @@ if(!empty($_POST['getRisk']))
 
        <h1 align="center"> View Risk Analysis Details</h1>
 	   <?php
-	   if($riskscore>7){
+	   if($riskscore>=7){
          echo'<p align="center"><a href="#"><button class="btn btn-fill1">Dangerous</button></a></p>';
+         echo '<b><p align="center">Risk Type: ' . $riskname . '</p></b>';
 		 }else if($riskscore>2){
          echo'<p align="center"><a href="#"><button class="btn btn-fill2">Less Dangerous</button></a></p><br>';
+         echo '<b><p align="center">Risk Type: ' . $riskname . '</p></b>';
 		 }else if($riskscore<3) {
-         echo'<p align="center"><a href="#"><button class="btn btn-fill3">Normal</button></a></p><br>';}
-         echo "the risk score is".$riskscore;
-         echo "the risk id is".$riskid2;
+         echo'<p align="center"><a href="#"><button class="btn btn-fill3">Normal</button></a></p><br>';
+         echo '<b><p align="center">Risk Type: ' . $riskname . '</p></b>';}
+
 
 
 		  ?>
