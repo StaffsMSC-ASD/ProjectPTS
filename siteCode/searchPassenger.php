@@ -55,10 +55,7 @@
                        <td>Address:</td>
                        <td><input type = "text" name= "Address" ></td>
                    </tr>
-                   <tr>
-                       <td>Risk Type ID:</td>
-                       <td> <input type = "text" name= "RISK_TYPE_ID" ></td>
-                   </tr>
+                 
                  
                </table>
                <p><input type="submit" name="searchPassenger" value="Search Passenger" />
