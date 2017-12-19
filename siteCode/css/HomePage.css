@@ -269,3 +269,9 @@ footer.mainFooter {
     
     
 }
+
+.error {
+    color: #ff0000;
+    text-align: center;
+    padding: 10px;
+}

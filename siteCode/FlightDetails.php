@@ -44,7 +44,7 @@ if(isset($_POST['submit'])
               
               <div class="wrapper">
             
-       <h1> Passenger Details Found</h1>
+       <h1> Flight Details Found</h1>
                     
        <p>Passenger Details found for passenger Jo Bloggs</p>        
                         
