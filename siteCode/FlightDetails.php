@@ -18,7 +18,7 @@ if(isset($_POST['submit'])
 <html>
      <head>
                <meta charset="UTF-8">
-               <title>TheGreenSystem.com </title>
+               <title>TheGreenLineSystem PTS</title>
                <link rel="stylesheet" type="text/css" href= "css/HomePage.css">   
     </head>
          <body>

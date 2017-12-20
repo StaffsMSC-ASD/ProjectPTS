@@ -33,7 +33,6 @@ if(!$result) {
                       <li><a href="HomePage.php">Home</a></li>
                       <li><a href="searchPassenger.php">Passenger Search</a></li>
                       <li><a href="searchFlights.php">Flight Search</a></li>
-                      <li><a href="AdminHome.php">Admin Home</a></li>
                    </ul>
                        </nav>
                    </div>

@@ -35,7 +35,7 @@ if(!empty($_POST['getRisk']))
 <html>
      <head>
                <meta charset="UTF-8">
-               <title>TheGreenSystem.com </title>
+               <title>TheGreenLineSystem PTS</title>
                <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
                <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
 
