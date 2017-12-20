@@ -4,7 +4,7 @@
 <html>
      <head>
                <meta charset="UTF-8">
-               <title>TheGreenSystem.com </title>
+               <title>TheGreenSystem PTS</title>
                <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
                <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
 
@@ -32,9 +32,13 @@
 
               <div class="wrapper">
 
-       <h1> Search Passengers</h1>
+       <h1>Search All Passengers</h1>
+       <a href="ListOfAllPassengers.php">Full list</a> of passengers on the system.
 
-       <p>Use this form to search through passengers by various criteria -- more blurb to be added </p>
+      
+        <h1> Search Passengers</h1>
+
+       <p>Add one or more of the search parameters below to search for passengers on the PTS System.</p>
 
            <form action = "ListOfPassengers.php" method = "POST">
                <!-- Will replace table with CSS and divs -->
