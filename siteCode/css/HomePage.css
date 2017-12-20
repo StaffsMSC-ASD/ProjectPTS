@@ -82,14 +82,14 @@ nav {
   margin-top: 3px;
   background-image: linear-gradient(to right top, #ffffff 0%, #a3c9e9 70%);
   max-width: 860px;
-  mask-image: linear-gradient rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  mask-image: linear-gradient rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%;
   margin: 0 auto 0 0;
   padding: 0px 0;
   border: 0px solid #ffffff;
   border-radius: 10px;
    color: #e67300;
     font-weight: bold;
-    margin-top= 8px;
+    margin-top: 8px;
   
 }
 
@@ -124,7 +124,7 @@ nav ul li a:hover {
     transition: all 0.45s;
     font-weight: bold;
 }
-}
+
 #aLogin {
     clear:both;
     float:right;
@@ -141,7 +141,7 @@ ul.sub1 {
 .highlight, header a{
     color: #e67300;
     font-weight: bold;
-    margin-top= 8px;
+    margin-top: 8px;
 }
 header a:hover {
     color: green;
@@ -268,4 +268,10 @@ footer.mainFooter {
     }
     
     
+}
+
+.error {
+    color: #ff0000;
+    text-align: center;
+    padding: 10px;
 }
