@@ -15,7 +15,7 @@ if(!$result) {
 <html>
      <head>
                <meta charset="UTF-8">
-               <title>TheGreenSystem.com </title>
+               <title>TheGreenLineSystem PTS</title>
                <link rel="stylesheet" type="text/css" href= "css/HomePage.css">
 
     </head>
@@ -42,9 +42,9 @@ if(!$result) {
 
               <div class="wrapper">
 
-       <h1> Passenger Details Found</h1>
+       <h1>All Passenger Details Found</h1>
 
-       <p>Use this form to search through flights by various criteria -- more blurb to be added </p>
+       <p>All Passenger Details for GreenLine PTS Systerm, click Select for Passenger Details</p>
 
 
                <table>
