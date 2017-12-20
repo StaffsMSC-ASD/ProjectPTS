@@ -1,21 +1,5 @@
 <?php
-/*
-session_start();
 
-include("Connect.php");
-
-passengers=array();
-
-if(isset($_POST['search2']))
-{
-  $query="SELECT * FROM passenger_detail WHERE flight_number=".$_POST['flight_number']."AND risk_score=".$_POST['risk_score'].";";
-  $passengers=mysqli_query($link,$query);
-  while ($row = mysql_fetch_array($passengers,MYSQL_NUM)){
-    echo $row[0], $row[1]),$row[2],$row[3],$row[4],$row[5],$row[6];
-}
-
-}
-*/
 session_start();
 
 include("connect.php");
@@ -37,7 +21,99 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
 	if(!$result){
 	  die("QUERY FAILED" . mysqli_error($link));
 	}
+}else if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empty($_POST['Surname'])) AND (empty($_POST['Age'])) AND (empty($_POST['Address'])))
+{
+	$query3="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND surname='".$_POST['Surname']."' ";
+	$result=mysqli_query($link,$query3);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (empty($_POST['Surname'])) AND (!empty($_POST['Age'])) AND (empty($_POST['Address'])))
+{
+	$query3="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND age='".$_POST['Age']."' ";
+	$result=mysqli_query($link,$query3);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (empty($_POST['Surname'])) AND (empty($_POST['Age'])) AND (!empty($_POST['Address'])))
+{
+	$query4="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND address='".$_POST['Address']."' ";
+	$result=mysqli_query($link,$query4);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empty($_POST['Surname'])) AND (!empty($_POST['Age'])) AND (empty($_POST['Address'])))
+{
+	$query5="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND surname='".$_POST['Surname']."' AND age='".$_POST['Age']."' ";
+	$result=mysqli_query($link,$query5);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empty($_POST['Surname'])) AND (empty($_POST['Age'])) AND (!empty($_POST['Address'])))
+{
+	$query6="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND surname='".$_POST['Surname']."' AND address='".$_POST['Address']."' ";
+	$result=mysqli_query($link,$query6);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (empty($_POST['Surname'])) AND (!empty($_POST['Age'])) AND (!empty($_POST['Address'])))
+{
+	$query7="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND age='".$_POST['Age']."' AND address='".$_POST['Address']."' ";
+	$result=mysqli_query($link,$query7);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (empty($_POST['Firstname'])) AND (!empty($_POST['Surname'])) AND (!empty($_POST['Age'])) AND (empty($_POST['Address'])))
+{
+	$query8="SELECT * FROM PASSENGER_DETAIL WHERE surname='".$_POST['Surname']."' AND age='".$_POST['Age']."' ";
+	$result=mysqli_query($link,$query8);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (empty($_POST['Firstname'])) AND (!empty($_POST['Surname'])) AND (empty($_POST['Age'])) AND (!empty($_POST['Address'])))
+{
+	$query9="SELECT * FROM PASSENGER_DETAIL WHERE surname='".$_POST['Surname']."' AND address='".$_POST['Address']."' ";
+	$result=mysqli_query($link,$query9);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (empty($_POST['Firstname'])) AND (!empty($_POST['Surname'])) AND (!empty($_POST['Age'])) AND (!empty($_POST['Address'])))
+{
+	$query10="SELECT * FROM PASSENGER_DETAIL WHERE surname='".$_POST['Surname']."' AND age='".$_POST['Age']."' AND address='".$_POST['Address']."' ";
+	$result=mysqli_query($link,$query10);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (empty($_POST['Firstname'])) AND (empty($_POST['Surname'])) AND (!empty($_POST['Age'])) AND (!empty($_POST['Address'])))
+{
+	$query11="SELECT * FROM PASSENGER_DETAIL WHERE age='".$_POST['Age']."' AND address='".$_POST['Address']."' ";
+	$result=mysqli_query($link,$query11);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (empty($_POST['Firstname'])) AND (!empty($_POST['Surname'])) AND (empty($_POST['Age'])) AND (empty($_POST['Address'])))
+{
+	$query12="SELECT * FROM PASSENGER_DETAIL WHERE surname='".$_POST['Surname']."' ";
+	$result=mysqli_query($link,$query12);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (empty($_POST['Firstname'])) AND (empty($_POST['Surname'])) AND (!empty($_POST['Age'])) AND (empty($_POST['Address'])))
+{
+	$query13="SELECT * FROM PASSENGER_DETAIL WHERE age='".$_POST['Age']."' ";
+	$result=mysqli_query($link,$query13);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
+}else if(isset($_POST['searchPassenger']) AND (empty($_POST['Firstname'])) AND (empty($_POST['Surname'])) AND (empty($_POST['Age'])) AND (!empty($_POST['Address'])))
+{
+	$query14="SELECT * FROM PASSENGER_DETAIL WHERE address='".$_POST['Address']."' ";
+	$result=mysqli_query($link,$query14);
+	if(!$result){
+	  die("QUERY FAILED" . mysqli_error($link));
+	}
 }
+
 
 ?>
 <!DOCTYPE html>
