@@ -207,7 +207,7 @@ background-repeat:no-repeat;}
 }
 	.btnFlight:hover, .btnFlight:focus, .btnFlight:active{
     background-color: #d46f09;
-    color: #FFFFFF;*
+    color: #FFFFFF;
 	}
 .btn.btn-pass {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -266,9 +266,9 @@ background-repeat:no-repeat;}
 }
 /*	.btn.btn-fill2:hover, .btn.btn-fill2:focus, .btn.btn-fill2:active, .btn.btn-fill2.active{
     background-color: #777777;
-    color: #FFFFFF;*/
+    color: #FFFFFF;
 	
-	}
+	}*/
 	.btn.btn-fill3 {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     width:170px;

@@ -105,9 +105,9 @@ if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_
 
               <div class="wrapper">
 
-       <h1> Passenger Details Found</h1>
+       <h1> Flight Details Found</h1>
 
-       <p>Use this form to search through flights by various criteria -- more blurb to be added </p>
+       <p>Flight details: </p>
 
 
                <table>
