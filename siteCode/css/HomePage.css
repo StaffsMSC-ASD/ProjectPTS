@@ -2,6 +2,7 @@ html, body, div, h3, p, ul, li, img {
     margin: 0;
     padding: 0;
 }
+
 h1{
 color:#000000;
 font-size:20px;
@@ -9,7 +10,7 @@ font-size:20px;
 h3{
 text-align:center;
 color:#000000;
-font-size:20px;
+font-size:25px;
 }
 
 article, aside, figure, footer, header, hgroup,
@@ -191,7 +192,7 @@ box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
     opacity: 1;
     filter: alpha(opacity=100); 
 background-image:url('Pass.png');
-background-repeat:no-repeat;}}
+background-repeat:no-repeat;}
 
 
 .btn.btn-flight {
@@ -305,8 +306,7 @@ footer.mainFooter {
         width: 100%;
     }
     
-    
-}
+
 
 .error {
     color: #ff0000;
