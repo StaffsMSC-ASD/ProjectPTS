@@ -90,12 +90,12 @@ if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_
                 </div>
 
                   <div class="wrapper">
-                      <nav>
+                     <nav>
                         <ul>
                       <li><a href="HomePage.php">Home</a></li>
                       <li><a href="searchPassenger.php">Passenger Search</a></li>
                       <li><a href="searchFlights.php">Flight Search</a></li>
-                      <li><a href="AdminHome.php">Admin Home</a></li>
+
                    </ul>
                        </nav>
                    </div>
