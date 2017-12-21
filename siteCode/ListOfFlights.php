@@ -3,23 +3,14 @@
  session_start();
 
 include("connect.php");
-<<<<<<< HEAD
 
-$query="SELECT * FROM FLIGHT_DETAIL WHERE flight_number='".$_POST['flightno']."' AND origin='".$_POST['dptfrom']."'AND destination='".$_POST['destination']."' ";
-$query2="SELECT * FROM FLIGHT_DETAIL WHERE destination='".$_POST['destination']."' ";
-if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_POST['DptFrom'])) AND (!empty($_POST['Destination'])))
-{
-  $result=mysqli_query($link,$query);
-  if(!$result) {
-    
-     die("QUERY FAILED" . mysqli_error($link));    
-    }else if(isset($_POST['searchFlight']) AND (empty($_POST['FlightNo'])) AND (empty($_POST['DptFrom'])) AND (!empty($_POST['Destination'])))
-=======
+
+
 $query="SELECT * FROM FLIGHT_DETAIL WHERE flight_number='".$_POST['FlightNo']."' AND origin='".$_POST['DptFrom']."'AND destination='".$_POST['Destination']."' ";
 $query2="SELECT * FROM FLIGHT_DETAIL WHERE destination='".$_POST['Destination']."' ";
-$query3="SELECT * FROM FLIGHT_DETAIL ";
+
 if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_POST['DptFrom'])) AND (!empty($_POST['Destination'])))
->>>>>>> 57f6f857ee36469c90fa07a43c56b44abe1991b4
+
 {
   $result=mysqli_query($link,$query);
   if(!$result) {
@@ -32,8 +23,54 @@ if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_
      if(!$result) {
 
         die("QUERY FAILED" . mysqli_error($link));
-}
-}
+		}
+	}else if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (empty($_POST['DptFrom'])) AND (empty($_POST['Destination'])))
+   {
+	   $query4="SELECT * FROM FLIGHT_DETAIL WHERE flight_number='".$_POST['FlightNo']."' ";
+
+     $result=mysqli_query($link,$query4);
+     if(!$result) {
+
+        die("QUERY FAILED" . mysqli_error($link));
+		}
+	}else if(isset($_POST['searchFlight']) AND (empty($_POST['FlightNo'])) AND (!empty($_POST['DptFrom'])) AND (empty($_POST['Destination'])))
+   {
+	   $query5="SELECT * FROM FLIGHT_DETAIL WHERE origin='".$_POST['DptFrom']."' ";
+
+     $result=mysqli_query($link,$query5);
+     if(!$result) {
+
+        die("QUERY FAILED" . mysqli_error($link));
+		}
+	}else if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_POST['DptFrom'])) AND (empty($_POST['Destination'])))
+   {
+	   $query6="SELECT * FROM FLIGHT_DETAIL WHERE origin='".$_POST['DptFrom']."' AND flight_number='".$_POST['FlightNo']."' ";
+
+     $result=mysqli_query($link,$query6);
+     if(!$result) {
+
+        die("QUERY FAILED" . mysqli_error($link));
+		}
+	}else if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (empty($_POST['DptFrom'])) AND (!empty($_POST['Destination'])))
+   {
+	   $query7="SELECT * FROM FLIGHT_DETAIL WHERE destination='".$_POST['Destination']."' AND flight_number='".$_POST['FlightNo']."' ";
+
+     $result=mysqli_query($link,$query7);
+     if(!$result) {
+
+        die("QUERY FAILED" . mysqli_error($link));
+		}
+	}else if(isset($_POST['searchFlight']) AND (empty($_POST['FlightNo'])) AND (!empty($_POST['DptFrom'])) AND (!empty($_POST['Destination'])))
+   {
+	   $query8="SELECT * FROM FLIGHT_DETAIL WHERE destination='".$_POST['Destination']."' AND origin='".$_POST['DptFrom']."' ";
+
+     $result=mysqli_query($link,$query8);
+     if(!$result) {
+
+        die("QUERY FAILED" . mysqli_error($link));
+		}
+	}
+
 
 
 ?>
