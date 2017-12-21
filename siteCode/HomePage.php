@@ -34,10 +34,11 @@ session_destroy();*/
 
          <section id="boxes">
              <div class="wrapper">
-                   <h3>The Green System</h3>
+                  <br> <h3>The GreenLine System</h3>
+                  <br>
                   <div class="container">
-                     <div class="box">
-                         <p>
+                    
+                         <p class="wrap">
                              GreenLine Systems, provides its customers with the capability to improve decision-making in support of enforcement and facilitation mandates.
                                       Started in 2002 by subject matter experts in border control, risk management, and logistics.
 GreenLine provides applications that assess the risk of vessels, cargo and travellers and provides technical consultants to both the U.S. Department
@@ -45,22 +46,13 @@ of Homeland Security and Canada’s Canadian Border Security Agency.    With off
 for a broad spectrum of defence, intelligence, law, and regulatory enforcement agencies.  Our solutions help analysts and decision-makers address risks to safety,
 security, health and revenue. Today, our solutions are operational in the United States, Canada, Europe, Central America, South America, Africa, and the Caribbean
 supporting defence, anti-smuggling, and regulatory enforcement missions.
-</p>
-<h3>List of pages for development purposes and testing</h3>
-            <ul>
-                <li><a href="searchPassenger.php">Search Passengers</a></li>
-                <li><a href="searchFlights.php">Search Flights</a></li>
-                <li><a href="PassengerDetails.php">Passenger Details</a></li>
-                <li><a href="FlightDetails.php">Flight Details</a></li>
-                <li ><a href="ListOfAllFlights.php">List Flights</a></li>
-                <li ><a href="ListOfAllPassengers.php">List of Passengers</a></li>
-                <li ><a href="RiskDetails.html"> Risk Analysis</a></li>
-                <li ><a href="AdminHome.php"> Admin Area</a></li>
-
-            </ul>
-            </p></div>
+</p><br>
+            <p align="center"><a href="searchPassenger.php"><button class="btnPassenger">Passenger Search</button></a> 
+              
+             <a href="searchFlights.php"><button class="btnFlight">Flight Search</button></a></p>
+              <br> </div>
                    </div>
-               </div>
+              
        </section>
 
 
