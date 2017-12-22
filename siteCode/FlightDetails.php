@@ -1,18 +1,15 @@
+
 <?php
-/*
 session_start();
+include("connect.php");
+$query="select * from PASSENGER_DETAIL as a join PASSENGER_AET_FLIGHT as b on a.PASSENGER_ID=b.PASSENGER_ID WHERE b.flight_number='".$_GET['id']."' ";
 
-include("connection.php");
+$result=mysqli_query($link,$query);
+	if(!$result) {
 
-$query = "SELECT * FROM passengers WHERE pasenger_id=".$_SESSION['pasenger_id'];
-
-if(isset($_POST['submit'])
- 
- {
-   $result=mysqli_query(&link,$query);
-   
- }
-*/
+     die("QUERY FAILED" . mysqli_error($link));
+    }
+		
 ?>
  <!DOCTYPE html>
 <html>
@@ -50,27 +47,36 @@ if(isset($_POST['submit'])
                         
            
                <table>
-                    
+               <tr>
+                        <th width="10%">User ID</th>
+                        <th width="10%">Firstname</th>
+                        <th width="10%">Surname </th>
+                        <th width="10%">Age</th>
+                        <th width="10%">Address</th>
+						</tr>
                    <tr>
-                      <td>Flight no: </td>
-                       <td>BA123</td>
-                   </tr>
-                  <tr>
-                       <td>Airline:</td>
-                       <td>BA</td>
-                   </tr>
-                   <tr>
-                       <td>From</td>
-                       <td>London</td>
-                   </tr>
-                   <tr>
-                       <td>Destination</td>
-                       <td>Toronto</td>
-                   </tr>
-                                      <tr>
-                       <td>Destination</td>
-                       <td>Toronto</td>
-                   </tr>
+                     <?php
+ 				   	while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
+ 		$userid=$row[0];
+ 		$firstname=$row[1];
+ 		$surname=$row[2];
+ 		$age=$row[3];
+ 		$address=$row[4];
+
+ 		echo "<tr>";
+
+ 		echo "<td> {$userid} </td>";
+ 		echo "<td> {$firstname}</td>";
+ 		echo "<td> {$surname}</td>";
+ 		echo "<td> {$age} </td>";
+ 		echo "<td> {$address} </td>";
+ 		echo '<td><a href="PassengerDetails.php?id=',$userid,'">select</a></td>';
+ 		echo"</tr>";
+
+ 		}
+ 					?>
+		</tr>
+
                </table>
                
        <form action = "someAction" method = "POST">
