@@ -119,25 +119,26 @@ if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_
                         <th width="20%">Flight Capacity</th>
                    </tr>
                     <tr>
-				    <?php
+		<?php
 		while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
 		$flightnumber=$row[0];
 		$airline=$row[1];
 		$destination=$row[2];
 		$origin=$row[3];
-    $flightcapacity=$row[4];
+        $flightcapacity=$row[4];
 
 
 		echo "<tr>";
-    echo "<td> {$flightnumber} </td>";
+        echo "<td> {$flightnumber} </td>";
 		echo "<td> {$airline} </td>";
 		echo "<td> {$destination} </td>";
 		echo "<td> {$origin} </td>";
-    echo "<td> {$flightcapacity} </td>";
-    echo"</tr>";
+        echo "<td> {$flightcapacity} </td>";
+	    echo '<td><a href="FlightDetails.php?id=',$flightnumber,'">select</a></td>';
+		echo"</tr>";
 
 		}
-					?>
+	    ?>
 		</tr>
                </table>
 
