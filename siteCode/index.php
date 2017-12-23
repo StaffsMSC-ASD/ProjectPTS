@@ -1,15 +1,4 @@
 
-<<<<<<< HEAD
-=======
-<?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
->>>>>>> d91484bcad2873df05a1e23bd5bd950e8bb1ca91
 <!DOCTYPE html>
 <html>
   <head>
@@ -38,7 +27,6 @@
               <section id="boxes">
                 <div class="wrapper">
 
-<<<<<<< HEAD
     <div align="center"><h1>Admin Login & Register</h1></div><br>
 
   <div class="form" align="center">
@@ -54,36 +42,12 @@
 <input type = "password" name= "PASSWORD" placeholder= "PASSWORD"> <br>
 <input type = "text" name= "USER_TYPE" placeholder= "USER_TYPE"><br>
 <button type = "submit">REGISTER </button>
-=======
-    <div align="center"><h1>Admin Login</h1></div><br>
-
-  <div class="form" align="center">
-
-    <form class="login-form" action = "HomePage.php" method = "POST">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-     <input type="submit" value="LOGIN" class="form button"/>
-
->>>>>>> d91484bcad2873df05a1e23bd5bd950e8bb1ca91
     </form>
   </div>
 </div>
 </section>
-<<<<<<< HEAD
 
 
-=======
-         <div align="center"><h2>Don't have an account please register</h2></div><br>
-<section>
-    <div class="wrapper">
-<form action = "admin_signup.php" method = "POST">
-<input type = "text" name= "USERNAME" placeholder= "USERNAME"><br>
-<input type = "password" name= "PASSWORD" placeholder= "PASSWORD"> <br>
-<input type = "text" name= "USER_TYPE" placeholder= "USER_TYPE"><br>
-<button type = "submit">REGISTER </button>
-</form>
-</section>
->>>>>>> d91484bcad2873df05a1e23bd5bd950e8bb1ca91
 
                 </div>
                 </div>
