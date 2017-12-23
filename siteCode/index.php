@@ -36,14 +36,14 @@
       <input type="text" placeholder="username" name="username"/>
       <input type="password" placeholder="password" name="password"/>
      <input type="submit" value="LOGIN" name="LOGIN" class="form button"/>
-<div align="center"><h2>New admin please register here</h2></div><br>
+<!-- <div align="center"><h2>New admin please register here</h2></div><br>
 <form action = "admin_signup.php" method = "POST">
 <input type = "text" name= "USERNAME" placeholder= "USERNAME"><br>
 <input type = "password" name= "PASSWORD" placeholder= "PASSWORD"> <br>
 <input type = "text" name= "USER_TYPE" placeholder= "USER_TYPE"><br>
 <button type = "submit">REGISTER </button>
     </form>
-  </div>
+  </div> -->
 </div>
 </section>
 
