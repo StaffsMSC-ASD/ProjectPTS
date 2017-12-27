@@ -9,6 +9,8 @@ include("connect.php");
 $query="SELECT * FROM FLIGHT_DETAIL WHERE flight_number='".$_POST['FlightNo']."' AND origin='".$_POST['DptFrom']."'AND destination='".$_POST['Destination']."' ";
 $query2="SELECT * FROM FLIGHT_DETAIL WHERE destination='".$_POST['Destination']."' ";
 
+// Doing search according to the fields entered from SearchFlights.php it could include any,combination of any or all of the criteria.
+
 if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_POST['DptFrom'])) AND (!empty($_POST['Destination'])))
 
 {
@@ -120,7 +122,8 @@ if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_
                    </tr>
                     <tr>
 		<?php
-		while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
+		// Showing the list of flights with their details.
+        while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
 		$flightnumber=$row[0];
 		$airline=$row[1];
 		$destination=$row[2];

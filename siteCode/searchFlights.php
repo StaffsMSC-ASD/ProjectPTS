@@ -50,20 +50,16 @@
 
                     <tr>
                        <td>Depart from</td>
-<<<<<<< HEAD
+
                        <td> <input type = "text" name="DptFrom"></td>
                    </tr>
                     <tr>
                        <td>Destination:</td>
                        <td><input type = "text" name="Destination"></td>
-=======
-                       <td> <input type = "text" name= "DptFrom" ></td>
+
+                    
                    </tr>
-                    <tr>
-                       <td>Destination:</td>
-                       <td><input type = "text" name= "Destination" ></td>
->>>>>>> b7b397371f7acd327fcb7da850e5410651b46a8b
-                   </tr>
+                    
 
 
                </table>

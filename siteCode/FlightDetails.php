@@ -2,7 +2,8 @@
 <?php
 session_start();
 include("connect.php");
-$query="select * from PASSENGER_DETAIL as a join PASSENGER_AET_FLIGHT as b on a.PASSENGER_ID=b.PASSENGER_ID WHERE b.flight_number='".$_GET['id']."' ";
+// Get the list of passengers in the flight selected from ListOfFlights.php page
+$query="select a.passenger_id,a.firstname,a.surname,a.age,a.address from PASSENGER_DETAIL as a join PASSENGER_AET_FLIGHT as b on a.PASSENGER_ID=b.PASSENGER_ID WHERE b.flight_number='".$_GET['id']."' ";
 
 $result=mysqli_query($link,$query);
 	if(!$result) {
@@ -41,9 +42,9 @@ $result=mysqli_query($link,$query);
               
               <div class="wrapper">
             
-       <h1> Flight Details Found</h1>
-                    
-       <p>Passenger Details found for passenger Jo Bloggs</p>        
+       <h1>List of Passengers</h1>
+
+       <p>List of Passengers on Flight number: <?php echo $_GET['id'];?></p>
                         
            
                <table>
@@ -55,8 +56,9 @@ $result=mysqli_query($link,$query);
                         <th width="10%">Address</th>
 						</tr>
                    <tr>
-                     <?php
- 				   	while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
+        <?php
+		//Showing the list of Passengers in the selected flight from ListOfFlights.php
+        while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
  		$userid=$row[0];
  		$firstname=$row[1];
  		$surname=$row[2];
@@ -64,8 +66,7 @@ $result=mysqli_query($link,$query);
  		$address=$row[4];
 
  		echo "<tr>";
-
- 		echo "<td> {$userid} </td>";
+        echo "<td> {$userid} </td>";
  		echo "<td> {$firstname}</td>";
  		echo "<td> {$surname}</td>";
  		echo "<td> {$age} </td>";
