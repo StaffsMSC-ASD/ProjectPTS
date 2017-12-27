@@ -168,7 +168,8 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
 		
 		// If no passenger is found print "No Passenger found for the selected search criteria"
 		if(empty($row)){
-	    echo "<b>No Passenger found for the selected search criteria </b>" ;
+	    echo "<b>No Passenger found for the selected search criteria </b> <br>" ;
+		echo '<a href="searchPassenger.php">Go Back</a>' ; 
         }
  		while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
  		$userid=$row[0];

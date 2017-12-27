@@ -126,7 +126,8 @@ if(isset($_POST['searchFlight']) AND (!empty($_POST['FlightNo'])) AND (!empty($_
 		
 		// If no passenger is found print "No Flight found for the selected search criteria"
 		if(empty($row)){
-	    echo "<b>No Flight found for the selected search criteria</b>" ;
+	    echo "<b>No Flight found for the selected search criteria</b> <br>" ;
+		echo '<a href="searchFlights.php">Go Back</a>' ; 
         }
         while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
 		$flightnumber=$row[0];
