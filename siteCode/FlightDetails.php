@@ -58,12 +58,18 @@ $result=mysqli_query($link,$query);
                    <tr>
         <?php
 		//Showing the list of Passengers in the selected flight from ListOfFlights.php
+		
+		// If no passenger is found print "No Passenger found in this flight"
+		if(empty($row)){
+	    echo "<b>No passenger found in this flight</b>" ;
+        }
         while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
  		$userid=$row[0];
  		$firstname=$row[1];
  		$surname=$row[2];
  		$age=$row[3];
  		$address=$row[4];
+		
 
  		echo "<tr>";
         echo "<td> {$userid} </td>";
@@ -75,7 +81,7 @@ $result=mysqli_query($link,$query);
  		echo"</tr>";
 
  		}
- 					?>
+ 		?>
 		</tr>
 
                </table>

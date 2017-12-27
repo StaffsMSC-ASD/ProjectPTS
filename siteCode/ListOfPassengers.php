@@ -6,6 +6,8 @@ include("connect.php");
 
 $query="SELECT * FROM PASSENGER_DETAIL WHERE firstname='".$_POST['Firstname']."' AND surname='".$_POST['Surname']."'AND age='".$_POST['Age']."'AND adress='".$_POST['Address']."'AND risk_type_id='".$_POST['RISK_TYPE_ID']."' ";
 
+// Doing search according to the fields entered from SearchPassenger.php it could include any,combination of any or all of the criteria.
+
 if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empty($_POST['Surname']) AND (!empty($_POST['Age'])) AND (!empty($_POST['Address'])) AND isset($_POST['RISK_TYPE_ID'])))
 {
   $result=mysqli_query($link,$query);
@@ -161,8 +163,14 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
                         <th width="10%">Address</th>
 						</tr>
                    <tr>
-                     <?php
- 				   	while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
+        <?php
+		// Showing the details of the passengers.
+		
+		// If no passenger is found print "No Passenger found for the selected search criteria"
+		if(empty($row)){
+	    echo "<b>No Flight Passenger found for the selected search criteria </b>" ;
+        }
+ 		while ($row = mysqli_fetch_array($result,MYSQLI_NUM)){
  		$userid=$row[0];
  		$firstname=$row[1];
  		$surname=$row[2];
@@ -180,7 +188,7 @@ if(isset($_POST['searchPassenger']) AND (!empty($_POST['Firstname'])) AND (!empt
  		echo"</tr>";
 
  		}
- 					?>
+ 		?>
 		</tr>
 
                </table>
