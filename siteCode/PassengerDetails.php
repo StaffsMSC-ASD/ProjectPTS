@@ -5,9 +5,12 @@ include("connect.php");
 $query = "SELECT flight_number FROM PASSENGER_AET_FLIGHT WHERE passenger_id='".$_GET['id']."' ";
 $query2="SELECT firstname,surname FROM PASSENGER_DETAIL WHERE passenger_id='".$_GET['id']."' ";
 $_SESSION['id'] =$_GET['id'];
+
+/*When the Select button for a certain passenger from ListOfPassengers.php is clicked */
 if(!empty($_GET['id']))
 {
 	$userid=$_GET['id'];
+	// Getting the flight number
 	$result=mysqli_query($link,$query);
 	if(!$result) {
 
@@ -17,6 +20,7 @@ if(!empty($_GET['id']))
 			$flightnum=$row[0];
 
 		}
+	// Getting the Passenger's Firstname and Surname
 	$result2=mysqli_query($link,$query2);
 	if(!$result2) {
 
@@ -26,7 +30,7 @@ if(!empty($_GET['id']))
 		$firstname=$row[0];
 		$surname=$row[1];
 	}
-
+     //Getting The flight details
 	$query3="SELECT destination,origin FROM FLIGHT_DETAIL WHERE flight_number='".$flightnum."' ";
 	$result3=mysqli_query($link,$query3);
 	if(!$result3) {
@@ -37,14 +41,9 @@ if(!empty($_GET['id']))
 		$destination=$row[0];
 		$origin=$row[1];
 	}
-
-
-
- }
-
-
-
+}
 ?>
+
  <!DOCTYPE html>
 <html>
      <head>
